@@ -6,17 +6,17 @@
     <meta name="theme-color" content="#4CAF50"> <!-- 主题色（适配浏览器状态栏） -->
     <title>我的个人主页</title>
     <!-- PWA应用清单 -->
-    <link rel="manifest" href="manifest.json">
+    <link rel="manifest" href="/myweb/manifest.json">
     <!-- iOS适配 -->
-    <link rel="apple-touch-icon" href="myphoto.jpg"> <!-- iOS桌面图标 -->
+    <link rel="apple-touch-icon" href="/myweb/myphoto.jpg"> <!-- iOS桌面图标 -->
     <meta name="apple-mobile-web-app-capable" content="yes"> <!-- 启用全屏模式 -->
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"> <!-- 状态栏样式 -->
     <!-- iOS启动图（使用myphoto.jpg） -->
-    <link rel="apple-touch-startup-image" href="myphoto.jpg" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)">
-    <link rel="apple-touch-startup-image" href="myphoto.jpg" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)">
-    <link rel="apple-touch-startup-image" href="myphoto.jpg" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)">
-    <link rel="apple-touch-startup-image" href="myphoto.jpg" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3)">
-    <link rel="apple-touch-startup-image" href="myphoto.jpg" media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3)"> <!-- iPhone 12/13 -->
+    <link rel="apple-touch-startup-image" href="/myweb/photo.png" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)">
+    <link rel="apple-touch-startup-image" href="/myweb/photo.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)">
+    <link rel="apple-touch-startup-image" href="/myweb/photo.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)">
+    <link rel="apple-touch-startup-image" href="/myweb/photo.png" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3)">
+    <link rel="apple-touch-startup-image" href="/myweb/photo.png" media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3)"> <!-- iPhone 12/13 -->
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: Arial, sans-serif; text-align: center; line-height: 1.6; min-height: 100vh; display: flex; flex-direction: column; }
@@ -33,13 +33,13 @@
 <body>
     <div class="title-box"><h1>我的个人主页</h1></div>
     <div class="content">
-        <img src="myphoto.jpg" alt="我的照片" class="profile-img">
+        <img src="/myweb/photo.png" alt="我的照片" class="profile-img">
         <div class="info">
             <p>生日：2000年1月1日</p >
             <p>性别：男</p>
             <p>爱好：阅读、旅行、编程</p>
         </div>
-        <a href="myphoto.jpg" class="btn">查看我的简介</a>
+        <a href="/myweb/intro.html" class="btn">查看我的简介</a>
     </div>
     <div class="footer"></div>
 
