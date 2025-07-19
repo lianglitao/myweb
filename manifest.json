@@ -1,18 +1,18 @@
 {
   "name": "我的个人主页",
   "short_name": "个人主页",
-  "start_url": "index.html",
+  "start_url": "/myweb/index.html",
   "display": "standalone", // 独立窗口显示，类似原生应用
   "background_color": "#f0f0f0",
   "theme_color": "#4CAF50", // 与按钮颜色一致，统一风格
   "icons": [
     {
-      "src": "icon-192x192.png",
+      "src": "/myweb/photo.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "icon-512x512.png",
+      "src": "/myweb/photo.png",
       "sizes": "512x512",
       "type": "image/png"
     }
