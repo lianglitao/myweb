@@ -2,12 +2,10 @@
 const CACHE_NAME = 'my-profile-v1';
 // 需要缓存的资源列表
 const CACHE_RESOURCES = [
-  'index.html',
-  'intro.html',
-  'myphoto.jpg',
-  'icon-192x192.png',
-  'icon-512x512.png',
-  'manifest.json'
+  '/myweb/index.html',
+  '/myweb/intro.html',
+  '/myweb/myphoto.jpg',
+  '/myweb/manifest.json'
 ];
 
 // 安装阶段：缓存资源
