@@ -6,16 +6,16 @@
     <meta name="theme-color" content="#4CAF50"> <!-- 保持主题色一致 -->
     <title>我的个人简介</title>
     <!-- PWA应用清单（与主页共用） -->
-    <link rel="manifest" href="manifest.json">
+    <link rel="manifest" href="/myweb/manifest.json">
     <!-- iOS适配（与主页共用配置） -->
-    <link rel="apple-touch-icon" href="myphoto.jpg">
+    <link rel="apple-touch-icon" href="/myweb/photo.png">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="apple-touch-startup-image" href="myphoto.jpg" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)">
-    <link rel="apple-touch-startup-image" href="myphoto.jpg" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)">
-    <link rel="apple-touch-startup-image" href="myphoto.jpg" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)">
-    <link rel="apple-touch-startup-image" href="myphoto.jpg" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3)">
-    <link rel="apple-touch-startup-image" href="myphoto.jpg" media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3)">
+    <link rel="apple-touch-startup-image" href="/myweb/photo.png" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)">
+    <link rel="apple-touch-startup-image" href="/myweb/photo.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)">
+    <link rel="apple-touch-startup-image" href="/myweb/photo.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)">
+    <link rel="apple-touch-startup-image" href="/myweb/photo.png" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3)">
+    <link rel="apple-touch-startup-image" href="/myweb/photo.png" media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3)">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: Arial, sans-serif; line-height: 1.6; min-height: 100vh; display: flex; flex-direction: column; }
@@ -30,7 +30,7 @@
 <body>
     <div class="title-box"><h1>我的个人简介</h1></div>
     <div class="intro-content">
-        <p>我热爱生活，喜欢在自然中寻找灵感。性格开朗，乐于结识新朋友。工作中认真负责，生活里偏爱简单纯粹，始终保持对世界的好奇心。</p >
+        <p>我是梁陈，我热爱生活，喜欢在自然中寻找灵感。性格开朗，乐于结识新朋友。工作中认真负责，生活里偏爱简单纯粹，始终保持对世界的好奇心。</p >
         <a href="myphoto.jpg" class="back-btn">返回主页</a > <!-- 新增返回按钮 -->
     </div>
     <div class="footer"></div>
@@ -39,7 +39,7 @@
     <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
-                navigator.serviceWorker.register('sw.js')
+                navigator.serviceWorker.register('/myweb/sw.js')
                     .then(reg => console.log('Service Worker注册成功：', reg.scope))
                     .catch(err => console.log('Service Worker注册失败：', err));
             });
