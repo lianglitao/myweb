@@ -1,5 +1,5 @@
 // 缓存名称（可自定义，更新时修改版本号）
-const CACHE_NAME = 'my-profile-v1';
+const CACHE_NAME = 'my-profile-v3.0.0';
 // 需要缓存的资源列表
 const CACHE_RESOURCES = [
   '/myweb/index.html',
